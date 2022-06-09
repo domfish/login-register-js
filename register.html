@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+
+
+    <title>Register</title>
+</head>
+
+<body>
+    <div>
+        <h1 class="titre">Créer votre compte</h1>
+    </div>
+    <form class="row  needs-validation" id="form">
+        <div class=" mb-3 offset-md-2 col-md-8">
+            <label for="name" class="form-label">Nom :</label>
+            <input type="text" class="form-control" id="name" aria-describedby=""
+                placeholder="Entrez votre Nom" >
+            <div class="invalid-feedback" id="no-required">
+               
+            </div>
+        </div>
+        <div class="mb-3 offset-md-2 col-md-8 ">
+            <label for="prenom" class="form-label">Prénom :</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Entrez votre Prénom ">
+            <div class="invalid-feedback" id="prenomRequired">
+               
+            </div>
+        </div>
+        <div class="mb-3 offset-md-2 col-md-8 ">
+            <label for="email" class="form-label">E-mail :</label>
+            <input type="text" class="form-control" id="email" placeholder="Entrez votre adresse mail ">
+            <div class="invalid-feedback" id="emailRequired">
+              </div>
+        </div>
+        <div class="mb-3 offset-md-2 col-md-8 ">
+            <label for="motdepasse" class="form-label">Mot de passe :</label>
+            <input type="password" class="form-control" id="motdepasse"placeholder="Entrez votre mot de passe " >
+            <div class="invalid-feedback" id="motDePasseRequired">
+            </div>
+        </div>
+        <div class="mb-3 offset-md-2 col-md-8 ">
+            <label for="confirmation" class="form-label">Confirmation mot de passe :</label>
+            <input type="password" class="form-control" id="confirmation" placeholder="Entrez votre mot de passe " >
+            <div class="invalid-feedback" id="confirmationRequired">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-success offset-md-2 col-md-8 mt-4">Connexion</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>
